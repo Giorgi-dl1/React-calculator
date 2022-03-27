@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button{
+    padding: 1rem .8rem;
+    color: white;
+    cursor: pointer;
+    &:hover{
+        opacity: .9;
+    }
+}
+.App{
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    .calculator{
+        max-width: 80vw;
+        border-radius: 7px;
+        overflow: hidden;
+        .result{
+            background-color: hsla(0, 0%, 0%, 0.911);
+            color: white;
+            text-align: right;
+            padding: .5rem;
+            font-size: 22px;
+            span{
+                font-size: 16px;
+                color: rgba(206, 203, 203, 0.575);
+            }
+        }
+        .buttons{
+            .operators{
+                display: flex;
+                button{
+                    flex: 1 1 0;
+                    background-color: hsla(0, 98%, 23%, 0.801);
+                    outline: none;
+                }
+            }
+            .secHalf{
+                display: flex;
+                .integers{
+                    display: flex;
+                    flex-wrap: wrap;
+                    button{
+                        flex: 1 1 33%;
+                        background-color: hsla(0, 0%, 0%, 0.822);
+                    }
+                    div{
+                        display: flex;
+                        width: 100%;
+                        button{
+                            background-color: hsla(0, 0%, 0%, 0.822);
+                            width: 50%;
+                        }
+                    }
+                }
+                .del-eq{
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 15rem;
+                    button{
+                        flex: 1 1 50%;
+                        background-color: hsl(212, 94%, 20%);
+                    }
+                }
+            }
+            
+        }
+    }
+}
