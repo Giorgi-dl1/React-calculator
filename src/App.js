@@ -18,6 +18,9 @@ function App() {
       return
     }
     setString(string.slice(0,-1));
+    if(string.slice(0,-1) ==''&& result !==''){
+      setResult('');
+    }
   }
   const calculate = ()=>{
     setString(result)
